@@ -288,6 +288,7 @@
         "extIcon": "https://raw.githubusercontent.com/DrozmotiX/ioBroker.sourceanalytix/main/admin/sourceanalytix.png",
         "readme": "https://github.com/DrozmotiX/ioBroker.sourceanalytix/blob/main/README.md",
         "loglevel": "info",
+        "tier": 2,
         "mode": "daemon",
         "type": "energy",
         "compact": true,
