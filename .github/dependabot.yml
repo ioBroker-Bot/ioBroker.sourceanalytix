@@ -1,21 +1,24 @@
+# Dependabot will run on day 19 of each month at 01:53 (Europe/Berlin timezone)
 version: 2
 updates:
-  - package-ecosystem: npm
-    directory: "/"
-    schedule:
-      interval: monthly
-      time: "04:00"
-      timezone: Europe/Berlin
-    assignees:
-      - DrozmotiX
-    versioning-strategy: increase
 
-  - package-ecosystem: github-actions
+  - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: monthly
-      time: "04:00"
-      timezone: Europe/Berlin
+      interval: "cron"
+      timezone: "Europe/Berlin"
+      cronjob: "53 1 19 * *"
+    assignees:
+      - "DrozmotiX"
+    versioning-strategy: "increase"
+    open-pull-requests-limit: 15
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "cron"
+      timezone: "Europe/Berlin"
+      cronjob: "53 1 19 * *"
     open-pull-requests-limit: 30
     assignees:
-      - DrozmotiX
+      - "DrozmotiX"
